@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+</head>
+<!-- There are 4 type of list
+            1 -> order list 
+           2 -> unorder list
+          3 -> nested list
+         4 -> defination list -->
+
+<body>
+
+    <!-- ORDER LIST  -->
+    <!-- type =>  1,a,A,i,I -->
+
+    <fieldset style="border-color: red">
+        <legend align="right" style="color:green">
+            <h3><Q><i>Order List</Q></i></h3>
+        </legend>
+        <ol type="1" style="color: blue;">
+            <li>Coffe</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    </fieldset>
+
+    <!-- Unorder List -->
+    <!-- type => circle , square , disc , none-->
+
+    <fieldset style="border-color:blue ;">
+        <legend align="center" style="color: red;">
+            <h3><Q><i><u>Unorder List</Q></i></u></h3>
+        </legend>
+        <ul type="none" align="center" style="color: green;">
+            <li>Apple</li>
+            <li>Vivo</li>
+            <li>Oppo</li>
+        </ul>
+    </fieldset>
+
+    <!-- DEFINATION LIST -->
+    <!-- 
+        in defination list there are 3 tags
+        1 -> defination list (dl)
+        2 -> defination term/title (dt)
+        3 -> defination description (dd)
+    -->
+
+    <fieldset style="border-color:green;">
+        <legend align="left" style="color:blueviolet ;">
+            <h3><Q><i><s>Defination List</s></Q></i></h3>
+        </legend>
+        <dl>
+            <h3 style="color: red;">Apple</h3>
+        </dl>
+        <dt style="color: blue;">I-Phones</dt>
+        <dd style="color: green; background-color: rgb(186, 224, 224);">The iPhone is a line of smartphones designed and
+            marketed by Apple Inc. These devices use Apple's iOS mobile operating system. The first-generation iPhone
+            was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new
+            iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold.</dd>
+
+        <dt style="color:blueviolet">I-Watche</dt>
+        <dd style="background-color:yellow ; color:blue">The Apple Watch was released in April 2015[18][19] and quickly
+            became the best-selling wearable device: 4.2 million were sold in the second quarter of fiscal 2015,[20][21]
+            and more than 100 million people were estimated to use an Apple Watch as of December 2020.[22] Apple has
+            introduced new generations of the Apple Watch with improved internal components each
+            September[23][24][25][26]—each labeled by Apple as a 'Series', with certain exceptions.[a]</dd>
+    </fieldset>
+
+    <br />
+
+    <!-- NESTED LIST -->
+
+    <fieldset>
+        <legend align="left">
+            <h3><Q><i><mark>Nested List</mark></Q></i></h3>
+        </legend>
+        <ol type="i">
+            <li>Cofee</li>
+            <li>Tea</li>
+            <ul type="square">
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+            </ul>
+            <li>Milk</li>
+        </ol><br />
+
+        <ul>
+            <li>apple</li>
+            <ol>
+                <li>Iphones</li>
+                <ol>
+                    <li>iPhone X</li>
+                    <li>iPhone 11</li>
+                    <li>iPhone 12</li>
+                </ol>
+                <li>ipad</li>
+                <li>Iwatch</li>
+            </ol>
+            <li>Samsang</li>
+            <ol>
+                <li>Tablet</li>
+                <li>Mobile</li>
+                <li>Watches</li>
+            </ol>
+            <li>Nokia</li>
+        </ul>
+    </fieldset>
+
+</body>
+
+</html>

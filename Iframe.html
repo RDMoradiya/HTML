@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRAME</title>
+</head>
+
+<body>
+    <!-- The HTML #<iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document. -->
+    <!-- Use the #height and #width attributes to specify the #size of the iframe. -->
+    <!-- Or you can add the #style attribute and use the #height and #width properties: -->
+    <!-- you can also change the #size, #style and #color of the iframe's #border: -->
+
+    <fieldset style="border-color:red;">
+        <legend style="color: green; font-size:50px">IFRAME</legend>
+        <iframe style="border:2px solid blue ; " width="660" height="415"
+            src="https://www.youtube.com/embed/t10sQb0Zmjs" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </fieldset>
+    <br>
+
+    <!-- An iframe can be used as the target frame for a link.
+    The target attribute of the link must refer to the name attribute of the iframe: -->
+
+    <fieldset style="border-color: indigo; ">
+        <legend style="font-size: 30px; color:brown; background-color:aqua">IFRAME TARGET FOR A LINK</legend>
+        <iframe src="" name="iframe_a" height="500px" width="50%"></iframe>
+        <p><a style="font-size: 30px; color:green" href="https://www.wikipedia.org/" target="iframe_a">wikipedia</a></p>
+    </fieldset>
+
+    <!-- Goole map -->
+
+    <fieldset style="border-color: blueviolet;">
+        <legend style="font-size: 30px;">MY LOCATION</legend>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.2722495818766!2d72.82313391484386!3d21.181341187928076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e6c2d24d613%3A0x5c7ca1ea557092d0!2sTOPS%20Technologies%20Surat%20-%20Python%2C%20Java%2C%20Android%2C%20PHP%2C%20Graphic%20%26%20Web%20Designing%20Courses!5e0!3m2!1sen!2sin!4v1659291362448!5m2!1sen!2sin"
+            width="600" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </fieldset>
+
+</body>
+
+</html>

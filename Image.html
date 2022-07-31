@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>IMAGE</title>
+</head>
+
+<!-- #background image -->
+
+<body style="background-image:url(background.webp) ;">
+
+    <!-- The required src attribute specifies the path (URL) to the image. -->
+    <!-- You can use the style attribute to specify the width and height of an image. -->
+
+    <legend style="color:cadetblue ;">STRUCTURE</legend>
+    <img src="disney.jpg" alt="Disney Image" style="width:35%; height:300px;">
+
+    <hr style="height: 2px" width="90%" color="blueviolet">
+    <p align="center">STYLE ATTRIBUTES </p>
+
+    <img src="disney.jpg" alt="Disney Image" width="55%" height="450px">
+
+    <br>
+    <hr style="height:3px" width="100%" color="red">
+    <br>
+
+    <!-- The #broken link icon and the alt text are shown if the browser cannot find the image. -->
+    <!-- The required #alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). -->
+
+    <p><u style="color: crimson;"> BROKEN LINK</u></p>
+    <img src="diney.jpg" alt="Disney Image" width="35%" height="300px">
+    <br>
+    <br>
+    <hr style="height: 2px;" width="70%" color="skyblue" align="left">
+
+    <!-- If you have your images in a #sub-folder, you must include the folder name in the src attribute: -->
+    <!-- here is the path but use only start from img folder, as shown in structure of img (D:\RD\html\img\doraemon.webp) -->
+
+    <fieldset style="border-color: red;">
+        <legend><b><i> IMAGE FROM ANOTHER FOLDER</b></i></legend>
+        <img src="\img\doraemon.webp" alt="">
+    </fieldset>
+    <br>
+
+
+    <!-- To point to an image on #another server, you must specify an absolute (full) URL in the src attribute: -->
+
+    <fieldset style="border-color: blue;">
+        <legend align="left"><b style="color:green;"> IMAGE FROM ANOTHER WEB</b></legend>
+        <img src="https://freepngimg.com/thumb/cartoon/36530-9-cartoon-hd.png" alt="floora"
+            style="height: 350px; width: 25%;">
+    </fieldset>
+
+    <!-- HTML allows #animated GIFs: -->
+
+    <fieldset style="border-color: green">
+        <legend align="left">
+            <h3 style="color:red">GIF</h3>
+        </legend>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif" alt="gif"
+            style="height: 200px;">
+    </fieldset>
+    <br>
+
+
+    <!-- To use an image as a #link, put the <img> tag inside the <a> tag: -->
+
+    <!-- _self - Default. Opens the document in the same window/tab as it was clicked
+    #_blank - Opens the document in a new window or tab
+    #_parent - Opens the document in the parent frame
+    #_top - Opens the document in the full body of the window -->
+
+    <fieldset style="border-color:darkorange ;">
+        <legend style="background-color: black; "><span style="color: white;"> IMAGE AS A LINK</span></legend>
+        <a href="https://en.wikipedia.org/wiki/Chhota_Bheem" target="_blank"><img src="Chhota-Bheem.jpg" alt=""></a>
+    </fieldset>
+    <br>
+
+    <!-- Use the #float property to let the image float to the right or to the left of a text: -->
+    <!-- Use the #float property to let the image float to the left or to the right -->
+
+    <fieldset style="border-color:blue;">
+        <legend style="color: green;">FLOAT IMAGE</legend>
+
+        <p> <img src="tomjerry.jpg" alt="" style="float: right;width: 15%; height:200px ;">Tom and Jerry is an American
+            animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph
+            Barbera.
+            Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry
+            between
+            the titular characters of a cat named Tom and a mouse named Jerry. Many shorts also feature several
+            recurring
+            characters.
+            <br>
+            In its original run, Hanna and Barbera produced 114 Tom and Jerry shorts for MGM from 1940 to 1958.[1]
+            During
+            this time, they won seven Academy Awards for Best Animated Short Film, tying for first place with Walt
+            Disney's
+            Silly Symphonies with the most awards in the category. After the MGM cartoon studio closed in 1957, MGM
+            revived
+            the series with Gene Deitch directing an additional 13 Tom and Jerry shorts for Rembrandt Films from 1961 to
+            1962. Tom and Jerry then became the highest-grossing animated short film series of that time, overtaking
+            Looney
+            Tunes. Chuck Jones then produced another 34 shorts with Sib Tower 12 Productions between 1963 and 1967.
+            Three
+            more shorts were produced, The Mansion Cat in 2001, The Karate Guard in 2005, and A Fundraising Adventure in
+            2014, making a total of 164 shorts.
+        </p>
+    </fieldset>
+    <br>
+
+    <!-- The HTML #<map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags. -->
+    <!-- im image maping (#usemap, #id) important attribute -->
+    <!-- #usemap use in #img -->
+    <!-- #id use in #map -->
+
+    <fieldset style="border-color: darkviolet;">
+        <legend style="background-color: green"><span style="color: white;">IMAGE MAPING</span> </legend>
+
+        <!-- #<area shape="circle" coords="x , y , 55" href="" alt=""> -->
+
+        <p> <img src="Laptop.jpg" alt="" usemap="#Laptop" style="float:left ;">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <ol>
+                        <li>Coffe</li>
+                        <li>Glasses</li>
+                        <li>Book</li>
+                        <li>Laptop</li>
+                        <li>Tree</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        </p>
+        <map name="Laptop" id="Laptop">
+            <area shape="circle" coords="502,242,49" href="https://www.cafecoffeeday.com/" alt="" target="_blank">
+
+            <!-- #<area shape="rect" coords="x1 , y1 , x2 , y2" href="" alt=""> -->
+
+            <area shape="rect" coords="143,68,304,140" href="https://www.lenskart.com/" alt="" target="_blank">
+
+            <area shape="rect" coords="8,215,186,387" href="https://en.wikipedia.org/wiki/Book" alt="" target="_blank">
+
+            <!-- #<area shape="poly" coords="x1,y1,x2,y2,x3,y3,x4,y4,....,xn,yn" href="" alt=""/> -->
+
+            <area shape="poly" coords="322,1,370,185,587,140,588,2,324,0" href="https://www.lenovo.com/" alt=""
+                target="_blank">
+
+            <area shape="circle" coords="170,19,45" href="https://en.wikipedia.org/wiki/Tree" alt="" target="_blank">
+
+    </fieldset>
+
+    </map>
+
+</body>
+
+</html>
