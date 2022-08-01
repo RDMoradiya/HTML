@@ -9,185 +9,183 @@
 </head>
 
 <body>
-    <!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
-    <!-- The HTML <form> element is used to create an HTML form for user input: -->
+      <!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+     <!-- The HTML <form> element is used to create an HTML form for user input: -->
 
-    <!-- The target attribute specifies where to display the response that is received after submitting the form.
+      <!-- The target attribute specifies where to display the response that is received after submitting the form.
         _blank	The response is displayed in a new window or tab
         _self	The response is displayed in the current window
         _parent	The response is displayed in the parent frame
         _top	The response is displayed in the full body of the window
         framename	The response is displayed in a named iframe -->
 
-    <!-- The method attribute specifies the HTTP method to be used when submitting the form data.
-    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). -->
+     <!-- The method attribute specifies the HTTP method to be used when submitting the form data.
+     The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). -->
 
-    <form action="" target="" method="">
+    <fieldset>
+        <legend style="color: green; font-size:50px; background-color:hotpink">Form </legend>
+        <form action="" target="" method="">
 
-        <!-- The <label> tag defines a label for many form elements. -->
-        <!-- The HTML <input> element is the most used form element. -->
-        <!-- The <input> element can be displayed in several ways, depending on the type attribute. -->
-        <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
-        <!-- Notice that each input field must have a #name attribute to be submitted data-->
+            <!-- The <label> tag defines a label for many form elements. -->
+            <!-- The HTML <input> element is the most used form element. -->
+            <!-- The <input> element can be displayed in several ways, depending on the type attribute. -->
+            <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
+            <!-- Notice that each input field must have a #name attribute to be submitted data-->
 
-        <label for="">Firstname :-</label>
-        <input type="text" name="fname" id="fname" size="25" autofocus autocomplete="">
-        <br>
-        <br>
+            <label for="">Firstname :-</label>
+            <input type="text" name="fname" id="fname" size="25" autofocus autocomplete="">
+            <br>
+            <br>
 
-        <!-- <input type="text"> defines a single-line text input field: -->
-        <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
-        The short hint is displayed in the input field before the user enters a value.
-        The placeholder attribute works with the following input types: text, search, url, tel, email, and password. -->
-        <!-- The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
+            <!-- <input type="text"> defines a single-line text input field: -->
+            <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+          The short hint is displayed in the input field before the user enters a value.
+         The placeholder attribute works with the following input types: text, search, url, tel, email, and password. -->
+            <!-- The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
 
-        <label for="">Middle Name :-</label>
-        <input type="text" name="mname" id="mname" placeholder="Enter Middle Name" autocomplete="off">
-        <br>
-        <br>
+            <label for="">Middle Name :-</label>
+            <input type="text" name="mname" id="mname" placeholder="Enter Middle Name" autocomplete="off">
+            <br>
+            <br>
 
-        <!-- <input type="password"> defines a password field: -->
+            <!-- <input type="password"> defines a password field: -->
 
-        <!-- The input size attribute specifies the visible width, in characters, of an input field.
-        The default value for size is 20.
-        Note: The size attribute works with the following input types: text, search, tel, url, email, and password. -->
+            <!-- The input size attribute specifies the visible width, in characters, of an input field.
+          The default value for size is 20.
+          Note: The size attribute works with the following input types: text, search, tel, url, email, and password. -->
 
-        <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field.
-        Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code. -->
+            <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+           Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code. -->
 
-        <label for="">Password :-</label>
-        <input type="password" name="password" id="password" size="50" maxlength="8">
-        <br>
-        <br>
+            <label for="">Password :-</label>
+            <input type="password" name="password" id="password" size="50" maxlength="8">
+            <br>
+            <br>
 
-        <!-- The <input type="tel"> is used for input fields that should contain a telephone number. -->
-        <!-- The input required attribute specifies that an input field must be filled out before submitting the form. the required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file. -->
+            <!-- The <input type="tel"> is used for input fields that should contain a telephone number. -->
+            <!-- The input required attribute specifies that an input field must be filled out before submitting the form. the required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file. -->
 
-        <label for="">Mobile number :-</label>
-        <input type="tel" name="mnumber" id="mnumber" pattern="[0-9]{5}-[0-9]{5}" placeholder="contry code+10 digit number" size="30" required>
-        <br>
-        <br>
+            <label for="">Mobile number :-</label>
+            <input type="tel" name="mnumber" id="mnumber" pattern="[0-9]{5}-[0-9]{5}"
+                placeholder="contry code+10 digit number" size="30" required>
+            <br>
+            <br>
 
-        <!-- The <input type="email"> is used for input fields that should contain an e-mail address.
-        Depending on browser support, the e-mail address can be automatically validated when submitted.
-        Some smartphones recognize the email type, and add ".com" to the keyboard to match email input. -->
+            <!-- The <input type="email"> is used for input fields that should contain an e-mail address.
+         Depending on browser support, the e-mail address can be automatically validated when submitted.
+         Some smartphones recognize the email type, and add ".com" to the keyboard to match email input. -->
 
-        <label for="">Email :-</label>
-        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
-        <br>
-        <br>
+            <label for="">Email :-</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+            <br>
+            <br>
 
-        <!-- The <input type="radio"> defines a radio button.
-        Radio buttons let a user select ONE of a limited number of choices. -->
-        <!-- for clicking on male word its autometicaly selct radio button of male ,if in given label structure #for attribute and #input structure #id attribute was same -->
+            <!-- The <input type="radio"> defines a radio button.
+          Radio buttons let a user select ONE of a limited number of choices. -->
+            <!-- for clicking on male word its autometicaly selct radio button of male ,if in given label structure #for attribute and #input structure #id attribute was same -->
 
-        <label for="">Gender :- </label>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="other">
-        <label for="other">Other</label>
-        <br>
-        <br>
+            <label for="">Gender :- </label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+            <br>
+            <br>
 
-        <!-- The <input type="number"> defines a numeric input field.You can also set restrictions on what numbers are accepted. -->
+            <!-- The <input type="number"> defines a numeric input field.You can also set restrictions on what numbers are accepted. -->
 
-        <label for="">Age</label>
-        <input type="number" name="age" id="age" min="1" max="35">
-        <br>
-        <br>
+            <label for="">Age</label>
+            <input type="number" name="age" id="age" min="1" max="35">
+            <br>
+            <br>
 
-        <!-- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max attributes -->
+            <!-- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max attributes -->
 
-        <label for="">Range</label>
-        <input type="range" name="range" id="range" min="1" max="100">
-        <br>
-        <br>
+            <label for="">Range</label>
+            <input type="range" name="range" id="range" min="1" max="100">
+            <br>
+            <br>
 
-        <!-- The <input type="checkbox"> defines a checkbox.
-      Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+            <!-- The <input type="checkbox"> defines a checkbox.
+          Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
 
-        <label for="">Hobby :-</label>
-        <input type="checkbox" name="hobby" id="cricket">
-        <label for="cricket">Cricket</label>
-        <input type="checkbox" name="hobby" id="football">
-        <label for="football">Football</label>
-        <input type="checkbox" name="hobby" id="gaming">
-        <label for="gaming">Gaming</label>
-        <br>
-        <br>
+            <label for="">Hobby :-</label>
+            <input type="checkbox" name="hobby" id="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="hobby" id="football">
+            <label for="football">Football</label>
+            <input type="checkbox" name="hobby" id="gaming">
+            <label for="gaming">Gaming</label>
+            <br>
+            <br>
 
-        <!-- The <select> element defines a drop-down list: -->
-        <!-- The <option> elements defines an option that can be selected. By default, the first item in the drop-down list is selected. -->
+            <!-- The <select> element defines a drop-down list: -->
+            <!-- The <option> elements defines an option that can be selected. By default, the first item in the drop-down list is selected. -->
 
-        <label for="">City :-</label>
-        <select name="city" id="city">
-            <option value="surat">Surat</option>
-            <option value="vadodara">Vadodara</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="navsari">Navsari</option>
-        </select>
-        <br>
-        <br>
+            <label for="">City :-</label>
+            <select name="city" id="city">
+                <option value="surat">Surat</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="navsari">Navsari</option>
+            </select>
+            <br>
+            <br>
 
-        <!-- The <input type="color"> is used for input fields that should contain a color. -->
+            <!-- The <input type="color"> is used for input fields that should contain a color. -->
 
-        <label for="color">Favorite Color :-</label>
-        <input type="color" name="color" id="color">
-        <br>
-        <br>
+            <label for="color">Favorite Color :-</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
 
-        <!-- The <textarea> element defines a multi-line input field (a text area): like Address -->
-        <!-- The rows attribute specifies the visible number of lines in a text area. The cols attribute specifies the visible width of a text area. -->
+            <!-- The <textarea> element defines a multi-line input field (a text area): like Address -->
+            <!-- The rows attribute specifies the visible number of lines in a text area. The cols attribute specifies the visible width of a text area. -->
 
-        <label for="">Address :-</label>
-        <textarea name="address" id="address" cols="10" rows="2"></textarea>
-        <br>
-        <br>
+            <label for="">Address :-</label>
+            <textarea name="address" id="address" cols="10" rows="2"></textarea>
+            <br>
+            <br>
 
-        <!-- The <input type="date"> is used for input fields that should contain a date. -->
+            <!-- The <input type="date"> is used for input fields that should contain a date. -->
 
-        <label for="">Birth Date :-</label>
-        <input type="date" name="bdate" id="bdate">
-        <br>
-        <br>
+            <label for="">Birth Date :-</label>
+            <input type="date" name="bdate" id="bdate">
+            <br>
+            <br>
 
-        <!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone. -->
+            <!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone. -->
 
-        <label for="">Todays Date and Time :-</label>
-        <input type="datetime-local" name="tdatetime" id="tdatetime">
-        <br>
-        <br>
+            <label for="">Todays Date and Time :-</label>
+            <input type="datetime-local" name="tdatetime" id="tdatetime">
+            <br>
+            <br>
 
-        <!-- The <input type="month"> allows the user to select a month and year. -->
+            <!-- The <input type="month"> allows the user to select a month and year. -->
 
-        <label for="">Current Month :-</label>
-        <input type="month" name="month" id="month">
-        <br>
-        <br>
+            <label for="">Current Month :-</label>
+            <input type="month" name="month" id="month">
+            <br>
+            <br>
 
-        <!-- The <input type="file"> defines a file-select field and a "Browse" button for file uploads. -->
+            <!-- The <input type="file"> defines a file-select field and a "Browse" button for file uploads. -->
 
-        <label for="">Upload file :-</label>
-        <input type="file" name="file" id="file">
-        <br>
-        <br>
-
-
-        <!-- The <input type="submit"> defines a button for submitting the form data to a form-handler. -->
-        <!-- The input value attribute specifies an initial value for an input field: means chne hte name -->
-
-        <input type="submit" value="Send">
-        <input type="reset" value="Clear">
+            <label for="">Upload file :-</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <br>
 
 
+            <!-- The <input type="submit"> defines a button for submitting the form data to a form-handler. -->
+            <!-- The input value attribute specifies an initial value for an input field: means chne hte name -->
 
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
 
-    </form>
-
-
-
+        </form>
+    </fieldset>
 
 </body>
 
