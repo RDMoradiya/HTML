@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="" method="post">
+      <table
+        style="background-color: rgb(178, 224, 224)"
+        align="center"
+        width="55%"
+      >
+        <tr>
+          <td align="center" style="color: brown; font-size: 30px">
+            <b>Individual Registration</b>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <br />
+
+      <table
+        style="background-color: rgb(178, 224, 224)"
+        align="center"
+        width="55%"
+      >
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="color: red; font-size: 20px">
+            <b> &nbsp;User Particulars &nbsp;</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right" colspan="2">
+            <label for="lid">* Login ID &nbsp;</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="lid"
+              id="lid"
+              required
+              placeholder="Enter Your ID"
+              autofocus
+            />
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right" colspan="2">
+            <label for="pass">* Password &nbsp;</label>
+          </td>
+
+          <td>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              required
+              placeholder="Enter Your Password"
+            />
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td style="text-align: right" colspan="2">
+            <label for="cpass">* Confirm Password &nbsp;</label>
+          </td>
+
+          <td>
+            <input
+              type="password"
+              name="cpass"
+              id="cpass"
+              required
+              placeholder="Again Enter Your Password"
+            />
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td style="color: red; font-size: 20px">
+            <b>&nbsp; Personal Particulars &nbsp;</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td align="right" width="25%">
+            <label for="">* Salutatio &nbsp;</label>
+          </td>
+          <td>
+            <select required>
+              <option value="mr">Mr</option>
+              <option value="mrs">mrs</option>
+              <option value="miss">Miss</option>
+              <option value="dr">Dr.</option>
+            </select>
+          </td>
+
+          <td align="right" width="15%">
+            <label for="fname">* First Name &nbsp;</label>
+          </td>
+          <td align="left" width="35%">
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              required
+              placeholder="Enter Your Name"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td align="right">
+            <label for="mname">* Middale Name &nbsp;</label>
+          </td>
+          <td align="left">
+            <input
+              type="text"
+              name="mname"
+              id="mname"
+              required
+              placeholder="Enter Your Middale Name"
+            />
+          </td>
+          <td align="right"><label for="lname">* Last Name &nbsp;</label></td>
+          <td align="left">
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              required
+              placeholder="Enter Your Last Name"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td align="right">
+            <label for="rstatus">* Residant Status &nbsp;</label>
+          </td>
+          <td align="left">
+            <input
+              type="text"
+              name="rstatus"
+              id="rstatus"
+              required
+              placeholder="Enter Your Status"
+            />
+          </td>
+          <td align="right"><label for="country">* Country &nbsp;</label></td>
+          <td align="left">
+            <select name="country" id="country" required>
+              <option value="india">India</option>
+              <option value="uk">UK</option>
+              <option value="usa">USA</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="right"><label for="email">* Email ID &nbsp;</label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="abc@gmail.com"
+            />
+          </td>
+          <td align="right">
+            <label for="mnumber">* Mobile Number &nbsp;</label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="mnumber"
+              id="mnumber"
+              pattern="[0-9]{5}-[0-9]{5}"
+              required
+              placeholder="12345-67890"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td style="color: red; font-size: 20px">
+            <b> &nbsp;Account Particulars &nbsp;</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td align="right">
+            <label for="anumber">* 15 Digit Account No &nbsp;</label>
+          </td>
+          <td>
+            <input
+              type="number"
+              name="anumber"
+              id="anumber"
+              required
+              placeholder="Enter Account Number"
+            />
+          </td>
+          <td align="right"><label for="nname">* Nick Name</label></td>
+          <td>
+            <input
+              type="text"
+              name="nname"
+              id="nname"
+              required
+              placeholder="Enter Your Nick Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="ftransfer">* Fund Transfer &nbsp;</label>
+          </td>
+          <td>
+            <select name="" id="">
+              <option value="neft">NEFT</option>
+              <option value="rtgs">RTGS</option>
+              <option value="upi">UPI</option>
+              <option value="cheque">CHEQUE</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td style="color: red; font-size: 20px">
+            <b> &nbsp; DECLARATION &nbsp;</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            &nbsp;&nbsp;I have read, understood and hereby agree to the Terms
+            and Conditionsin respect of all products and channels.
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            &nbsp;&nbsp;I understand that any changes in the terms and
+            conditions applicable to this relationship would be made available
+            to me on &nbsp;&nbsp;request at any IOB branches. I confirm that all
+            accounts under this login name are operated singly and in case of
+            joint account &nbsp;&nbsp;operator that information furnished in
+            this form is true to the best of my knowledge and belief.
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="right">
+            <input
+              type="submit"
+              name="submit submit"
+              id=""
+              style="
+                background-color: rgb(142, 142, 202);
+                border: 1;
+                border-color: rgb(119, 108, 108);
+              "
+            />
+          </td>
+          <td colspan="2">
+            <input
+              type="reset"
+              name="reset"
+              id="reser"
+              style="
+                background-color: rgb(142, 142, 202);
+                border: 1;
+                border-color: rgb(119, 108, 108);
+              "
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
